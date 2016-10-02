@@ -1,0 +1,237 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0xffffffffa38b5120, pid=4324, tid=2472
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_65-b17) (build 1.8.0_65-b17)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.65-b01 mixed mode windows-amd64 compressed oops)
+# Problematic frame:
+# C  0xffffffffa38b5120
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000220e800):  JavaThread "main" [_thread_in_Java, id=2472, stack(0x00000000024e0000,0x00000000025e0000)]
+
+siginfo: ExceptionCode=0xc0000005, ExceptionInformation=0x0000000000000008 0xffffffffa38b5120
+
+Registers:
+RAX=0x0000000000000006, RBX=0x0000000000000130, RCX=0x00000000f964e948, RDX=0x00000000f964e948
+RSP=0x00000000025de7c8, RBP=0x00000000025dea78, RSI=0x00000000f96598c8, RDI=0x0000000000000006
+R8 =0x00000000f96598c8, R9 =0x0000000000000130, R10=0x0000000012f6f180, R11=0x00000000f96598c8
+R12=0x0000000000000000, R13=0x0000000000000ff7, R14=0x0000000000000000, R15=0x000000000220e800
+RIP=0xffffffffa38b5120, EFLAGS=0x0000000000010202
+
+Top of Stack: (sp=0x00000000025de7c8)
+0x00000000025de7c8:   0000000002ad7e84 00000000f97eafc0
+0x00000000025de7d8:   00000000f97eafc0 00000000f9638588
+0x00000000025de7e8:   00000000025de7e8 000000005360fa74
+0x00000000025de7f8:   00000000025de838 00000000536109c8
+0x00000000025de808:   0000000053636730 00000000f964e948
+0x00000000025de818:   0000013000000006 00000000f96598c8
+0x00000000025de828:   00000000f9638680 0000000400000004
+0x00000000025de838:   00000000f9638588 00000000025dea78
+0x00000000025de848:   0000000002ad66a4 00000000025dea78
+0x00000000025de858:   0000000002b2fc0c 00000000f9638680
+0x00000000025de868:   0000000000000001 00000000f96386d8
+0x00000000025de878:   0000000000000000 00000000f96386d8
+0x00000000025de888:   0000000000000000 00000000f96386d8
+0x00000000025de898:   00000000f964fca0 00000000025dea20
+0x00000000025de8a8:   0000000002b4e254 00000000025dea78
+0x00000000025de8b8:   00000000f964f000 00000000f964fca0 
+
+Instructions: (pc=0xffffffffa38b5120)
+0xffffffffa38b5100:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0xc0000005]
+
+Register to memory mapping:
+
+RAX=0x0000000000000006 is an unknown value
+RBX=0x0000000000000130 is an unknown value
+RCX=0x00000000f964e948 is an oop
+org.apache.xerces.util.SymbolTable 
+ - klass: 'org/apache/xerces/util/SymbolTable'
+RDX=0x00000000f964e948 is an oop
+org.apache.xerces.util.SymbolTable 
+ - klass: 'org/apache/xerces/util/SymbolTable'
+RSP=0x00000000025de7c8 is pointing into the stack for thread: 0x000000000220e800
+RBP=0x00000000025dea78 is pointing into the stack for thread: 0x000000000220e800
+RSI=0x00000000f96598c8 is an oop
+[C 
+ - klass: {type array char}
+ - length: 2048
+RDI=0x0000000000000006 is an unknown value
+R8 =0x00000000f96598c8 is an oop
+[C 
+ - klass: {type array char}
+ - length: 2048
+R9 =0x0000000000000130 is an unknown value
+R10=0x0000000012f6f180 is pointing into metadata
+R11=0x00000000f96598c8 is an oop
+[C 
+ - klass: {type array char}
+ - length: 2048
+R12=0x0000000000000000 is an unknown value
+R13=0x0000000000000ff7 is an unknown value
+R14=0x0000000000000000 is an unknown value
+R15=0x000000000220e800 is a thread
+
+
+Stack: [0x00000000024e0000,0x00000000025e0000],  sp=0x00000000025de7c8,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0xffffffffa38b5120
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00000000550de000 JavaThread "Service Thread" daemon [_thread_blocked, id=4396, stack(0x0000000055650000,0x0000000055750000)]
+  0x0000000055062000 JavaThread "C1 CompilerThread2" daemon [_thread_blocked, id=3800, stack(0x00000000554a0000,0x00000000555a0000)]
+  0x0000000055061000 JavaThread "C2 CompilerThread1" daemon [_thread_in_native, id=4772, stack(0x0000000054e30000,0x0000000054f30000)]
+  0x00000000538d8000 JavaThread "C2 CompilerThread0" daemon [_thread_in_native, id=2096, stack(0x0000000054c20000,0x0000000054d20000)]
+  0x00000000538d7000 JavaThread "Attach Listener" daemon [_thread_blocked, id=2676, stack(0x0000000054f60000,0x0000000055060000)]
+  0x00000000538d3800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=1336, stack(0x0000000054d20000,0x0000000054e20000)]
+  0x000000005387a000 JavaThread "Finalizer" daemon [_thread_blocked, id=3996, stack(0x0000000054b10000,0x0000000054c10000)]
+  0x0000000053873000 JavaThread "Reference Handler" daemon [_thread_blocked, id=4856, stack(0x00000000549f0000,0x0000000054af0000)]
+=>0x000000000220e800 JavaThread "main" [_thread_in_Java, id=2472, stack(0x00000000024e0000,0x00000000025e0000)]
+
+Other Threads:
+  0x000000005386d800 VMThread [stack: 0x00000000548b0000,0x00000000549b0000] [id=3524]
+  0x00000000550f6000 WatcherThread [stack: 0x00000000557d0000,0x00000000558d0000] [id=1396]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 38400K, used 24971K [0x00000000f8000000, 0x00000000faa80000, 0x0000000100000000)
+  eden space 33280K, 75% used [0x00000000f8000000,0x00000000f9862d90,0x00000000fa080000)
+  from space 5120K, 0% used [0x00000000fa580000,0x00000000fa580000,0x00000000faa80000)
+  to   space 5120K, 0% used [0x00000000fa080000,0x00000000fa080000,0x00000000fa580000)
+ ParOldGen       total 87552K, used 0K [0x00000000e8000000, 0x00000000ed580000, 0x00000000f8000000)
+  object space 87552K, 0% used [0x00000000e8000000,0x00000000e8000000,0x00000000ed580000)
+ Metaspace       used 7866K, capacity 8465K, committed 8704K, reserved 1056768K
+  class space    used 879K, capacity 913K, committed 1024K, reserved 1048576K
+
+Card table byte_map: [0x0000000002210000,0x00000000022e0000] byte_map_base: 0x0000000001ad0000
+
+Marking Bits: (ParMarkBitMap*) 0x000000006386a5b0
+ Begin Bits: [0x00000000122e0000, 0x00000000128e0000)
+ End Bits:   [0x00000000128e0000, 0x0000000012ee0000)
+
+Polling page: 0x0000000001b60000
+
+CodeCache: size=245760Kb used=2778Kb max_used=2790Kb free=242981Kb
+ bounds [0x00000000028b0000, 0x0000000002b70000, 0x00000000118b0000]
+ total_blobs=942 nmethods=643 adapters=214
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 0.818 Thread 0x0000000055062000  639       1       flex2.compiler.swc.SwcDynamicArchive::getLocation (5 bytes)
+Event: 0.818 Thread 0x0000000055062000 nmethod 639 0x0000000002b5de90 code [0x0000000002b5dfe0, 0x0000000002b5e0f0]
+Event: 0.818 Thread 0x0000000055062000  640       1       flex2.compiler.swc.Component::getClassName (5 bytes)
+Event: 0.818 Thread 0x0000000055062000 nmethod 640 0x0000000002b60bd0 code [0x0000000002b60d20, 0x0000000002b60e30]
+Event: 0.818 Thread 0x0000000055062000  643       3       flex2.compiler.swc.catalog.CatalogReader$ScriptReader::endElement (87 bytes)
+Event: 0.819 Thread 0x0000000055062000 nmethod 643 0x0000000002b605d0 code [0x0000000002b60760, 0x0000000002b60a88]
+Event: 0.821 Thread 0x0000000055061000 nmethod 637% 0x0000000002b60050 code [0x0000000002b601a0, 0x0000000002b60458]
+Event: 0.821 Thread 0x0000000055061000  642       4       org.apache.xerces.util.SymbolTable::hash (38 bytes)
+Event: 0.822 Thread 0x0000000055061000 nmethod 642 0x0000000002b66010 code [0x0000000002b66140, 0x0000000002b66258]
+Event: 0.822 Thread 0x0000000055061000  645       4       org.apache.xerces.impl.io.UTF8Reader::read (1291 bytes)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (3 events):
+Event: 0.220 Thread 0x000000000220e800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002a04180 method=java.lang.String.startsWith(Ljava/lang/String;I)Z @ 25
+Event: 0.476 Thread 0x000000000220e800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002a89c4c method=sun.misc.MetaIndex.mayContain(Ljava/lang/String;)Z @ 38
+Event: 0.816 Thread 0x000000000220e800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000000002b3f7f4 method=org.apache.xerces.impl.XMLEntityScanner.scanLiteral(ILorg/apache/xerces/xni/XMLString;)I @ 43
+
+Internal exceptions (9 events):
+Event: 0.032 Thread 0x000000000220e800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.defineClass(Ljava/lang/String;[BII)Ljava/lang/Class; name or signature does not match> (0x00000000f800d638) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\sZkZEœ ?
+Event: 0.032 Thread 0x000000000220e800 Exception <a 'java/lang/NoSuchMethodError': Method sun.misc.Unsafe.prefetchRead(Ljava/lang/Object;J)V name or signature does not match> (0x00000000f800d920) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jni.jÑOL›ÙÂ?
+Event: 0.147 Thread 0x000000000220e800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f8348cb0) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.147 Thread 0x000000000220e800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f8348ec0) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.148 Thread 0x000000000220e800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f834ca68) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.148 Thread 0x000000000220e800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f834cc78) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.162 Thread 0x000000000220e800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f8370ac0) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.162 Thread 0x000000000220e800 Exception <a 'java/security/PrivilegedActionException'> (0x00000000f8370eb8) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\prims\jvm.cpp, line 1386]
+Event: 0.476 Thread 0x000000000220e800 Exception <a 'java/lang/ClassNotFoundException': sun/net/www/protocol/c/Handler> (0x00000000f89ce130) thrown at [C:\workspace\8-2-build-windows-amd64-cygwin\jdk8u65\4987\hotspot\src\share\vm\classfile\systemDictionary.cpp, line 210]
+
+Events (10 events):
+Event: 0.778 loading class java/lang/StrictMath done
+Event: 0.814 loading class flex2/compiler/swc/Component
+Event: 0.814 loading class flex2/compiler/swc/Component done
+Event: 0.814 loading class flex2/tools/oem/Component
+Event: 0.814 loading class flex2/tools/oem/Component done
+Event: 0.816 Thread 0x000000000220e800 Uncommon trap: trap_request=0xffffff65 fr.pc=0x0000000002b3f7f4
+Event: 0.816 Thread 0x000000000220e800 DEOPT PACKING pc=0x0000000002b3f7f4 sp=0x00000000025de6c0
+Event: 0.816 Thread 0x000000000220e800 DEOPT UNPACKING pc=0x00000000028f556a sp=0x00000000025de628 mode 2
+Event: 0.821 Thread 0x000000000220e800 DEOPT PACKING pc=0x0000000002b1af91 sp=0x00000000025de4f0
+Event: 0.821 Thread 0x000000000220e800 DEOPT UNPACKING pc=0x00000000028f71bf sp=0x00000000025de228 mode 0
+
+
+Dynamic libraries:
+0x000000013fbb0000 - 0x000000013fbe7000 	C:\ProgramData\Oracle\Java\javapath\java.exe
+0x00000000776d0000 - 0x0000000077879000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00000000775b0000 - 0x00000000776d0000 	C:\Windows\system32\kernel32.dll
+0x000007fefd550000 - 0x000007fefd5bc000 	C:\Windows\system32\KERNELBASE.dll
+0x000007feff2b0000 - 0x000007feff38b000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefdee0000 - 0x000007fefdf7f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefe000000 - 0x000007fefe01f000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefdb90000 - 0x000007fefdcbd000 	C:\Windows\system32\RPCRT4.dll
+0x00000000774b0000 - 0x00000000775aa000 	C:\Windows\system32\USER32.dll
+0x000007feff960000 - 0x000007feff9c7000 	C:\Windows\system32\GDI32.dll
+0x000007fefe2a0000 - 0x000007fefe2ae000 	C:\Windows\system32\LPK.dll
+0x000007fefd9b0000 - 0x000007fefda7a000 	C:\Windows\system32\USP10.dll
+0x000007fefb850000 - 0x000007fefba44000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007feff5f0000 - 0x000007feff661000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefdd20000 - 0x000007fefdd4e000 	C:\Windows\system32\IMM32.DLL
+0x000007fefda80000 - 0x000007fefdb89000 	C:\Windows\system32\MSCTF.dll
+0x000000006b100000 - 0x000000006b1d2000 	C:\Program Files\Java\jre1.8.0_65\bin\msvcr100.dll
+0x0000000063060000 - 0x00000000638e9000 	C:\Program Files\Java\jre1.8.0_65\bin\server\jvm.dll
+0x000007fefa590000 - 0x000007fefa599000 	C:\Windows\system32\WSOCK32.dll
+0x000007feff390000 - 0x000007feff3dd000 	C:\Windows\system32\WS2_32.dll
+0x000007feff9d0000 - 0x000007feff9d8000 	C:\Windows\system32\NSI.dll
+0x000007fefa970000 - 0x000007fefa9ab000 	C:\Windows\system32\WINMM.dll
+0x000007fefc5d0000 - 0x000007fefc5dc000 	C:\Windows\system32\VERSION.dll
+0x00000000778a0000 - 0x00000000778a7000 	C:\Windows\system32\PSAPI.DLL
+0x000000006dcd0000 - 0x000000006dcdf000 	C:\Program Files\Java\jre1.8.0_65\bin\verify.dll
+0x000000006b9a0000 - 0x000000006b9c9000 	C:\Program Files\Java\jre1.8.0_65\bin\java.dll
+0x000000006d980000 - 0x000000006d996000 	C:\Program Files\Java\jre1.8.0_65\bin\zip.dll
+0x000007fefe520000 - 0x000007feff2a9000 	C:\Windows\system32\SHELL32.dll
+0x000007feff3e0000 - 0x000007feff5e3000 	C:\Windows\system32\ole32.dll
+0x000007fefd470000 - 0x000007fefd47f000 	C:\Windows\system32\profapi.dll
+0x000007fefafa0000 - 0x000007fefb0c5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Xmx384m -Dsun.io.useCanonCaches=false -Duser.language=en -Duser.region=US -Djava.util.Arrays.useLegacyMergeSort=true -Dapplication.home=C:\Users\Georg\Downloads\flex_sdk_3.5 
+java_command: C:\Users\Georg\Downloads\flex_sdk_3.5\lib\fcsh.jar
+java_class_path (initial): C:\Users\Georg\Downloads\flex_sdk_3.5\lib\fcsh.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32\config\systemprofile\.dnx\bin;C:\Program Files\Microsoft DNX\Dnvm\;C:\Program Files (x86)\FlashDevelop\Tools\AppMan;C:\Program Files (x86)\FlashDevelop
+USERNAME=Georg
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 (6.1.7601.19045)
+
+CPU:total 4 (4 cores per cpu, 1 threads per core) family 6 model 23 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, tsc
+
+Memory: 4k page, physical 8387128k(6509568k free), swap 16772420k(14570488k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.65-b01) for windows-amd64 JRE (1.8.0_65-b17), built on Oct  6 2015 16:39:20 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Sun Dec 13 16:10:33 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+

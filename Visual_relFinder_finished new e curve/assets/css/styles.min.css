@@ -1,0 +1,7 @@
+.myTabStyle{color:#ffffff;backgroundColor:#bbbbbb;fontSize:9;fontWeight:middle;text-align:center;}
+.myButtonStyle3{color:#ffffff;backgroundColor:#bbbbbb;fontSize:9;fontWeight:middle;}
+.myHeader{color:#ffffff;backgroundColor:#bbbbbb;fontWeight:middle;}
+.closeBtn{upSkin:Embed('../img/closeButton.png');overSkin:Embed('../img/closeButton.png');downSkin:Embed('../img/closeButton.png');disabledSkin:Embed('../img/closeButton.png');}
+.pinBtn{upSkin:Embed('../img/pin3.png');overSkin:Embed('../img/pin3.png');downSkin:Embed('../img/pin3.png');disabledSkin:Embed('../img/pin3.png');}
+.unpinBtn{upSkin:Embed('../img/unpin1.png');overSkin:Embed('../img/unpinhighlight1.png');downSkin:Embed('../img/unpinhighlight1.png');disabledSkin:Embed('../img/unpin1.png');}
+.arrowBtn{upSkin:Embed('../img/arrow.gif');overSkin:Embed('../img/arrow.gif');downSkin:Embed('../img/arrow.gif');disabledSkin:Embed('../img/arrow.gif');}
